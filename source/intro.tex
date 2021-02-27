@@ -496,8 +496,8 @@ extensions\iref{intro.compliance} and internal types used by the library.
 transformation that an algorithm applies
 before inspecting the values of elements
 
-\begin{example}
-\begin{codeblock}
+\begin{example}  xxxx
+  \begin{codeblock}
 std::pair<int, std::string_view> pairs[] = {{2, "foo"}, {1, "bar"}, {0, "baz"}};
 std::ranges::sort(pairs, std::ranges::less{}, [](auto const& p) { return p.first; });
 \end{codeblock}
@@ -1019,3 +1019,5 @@ intervening commas (e.g., \grammarterm{identifier-list} is a sequence of
 identifiers separated by commas).
 \end{itemize}%
 \indextext{notation!syntax|)}
+
+
