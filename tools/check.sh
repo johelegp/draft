@@ -17,7 +17,7 @@ function fail() {
 
     # For some reason, the file/line/col information is not shown in the GUI.
     # Make sure to leave it in the message proper.
-    ! sed 's/^\(.\+\.tex\):\([0-9]\+\):/::error file=\1,line=\2::\1:\2:'"$*"': /; s/^\([^:][^:]\)/::error ::'"$*"': \1/' |
+    ! sed 's/^\(.\+\.tex\):\([0-9]\+\):/::error file=source\/\1,line=\2::\1:\2:'"$*"': /; s/^\([^:][^:]\)/::error ::'"$*"': \1/' |
     grep .
 }
 
